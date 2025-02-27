@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34112.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{07380EEE-A45B-445D-A661-357DFED73EC8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Patient", "Patient", "{81E01CFE-2396-4CDE-BD8A-234B05E42639}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital.Patient", "Services\Patient\Hospital.Patient\Hospital.Patient.csproj", "{43BC3290-DE19-4286-99CB-A5857B59A6D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43BC3290-DE19-4286-99CB-A5857B59A6D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43BC3290-DE19-4286-99CB-A5857B59A6D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43BC3290-DE19-4286-99CB-A5857B59A6D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43BC3290-DE19-4286-99CB-A5857B59A6D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{81E01CFE-2396-4CDE-BD8A-234B05E42639} = {07380EEE-A45B-445D-A661-357DFED73EC8}
+		{43BC3290-DE19-4286-99CB-A5857B59A6D2} = {81E01CFE-2396-4CDE-BD8A-234B05E42639}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EDB827DA-1EDE-44B0-A770-76543B0849C6}
+	EndGlobalSection
+EndGlobal
