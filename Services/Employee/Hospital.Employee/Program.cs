@@ -1,22 +1,23 @@
-using Hospital.Patient.Services.PatientAdultServices;
-using Hospital.Patient.Services.PatientChildServices;
-using Hospital.Patient.Settings;
-using Microsoft.Extensions.Options;
+using Hospital.Employee.Context;
+using Hospital.Employee.Services.DepartmentServices;
+using Hospital.Employee.Services.DoctorServices;
+using Hospital.Employee.Services.NurseServices;
+using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddScoped<IPatientAdultService, PatientAdultService>();
-builder.Services.AddScoped<IPatientChildService, PatientChildService>();
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+builder.Services.AddScoped<IDepartmentService, DepartmentService>();
+builder.Services.AddScoped<IDoctorService, DoctorService>();
 
-builder.Services.Configure<DatabaseSettings>(builder.Configuration.GetSection("DatabaseSettingsJson"));
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
-builder.Services.AddScoped<IDatabaseSettings>(sp =>
+builder.Services.AddDbContext<EmployeeContext>(opt =>
 {
-    return sp.GetRequiredService<IOptions<DatabaseSettings>>().Value;
+    opt.UseNpgsql(connectionString);
 });
 
 builder.Services.AddControllers();

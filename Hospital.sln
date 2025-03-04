@@ -7,7 +7,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{07
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Patient", "Patient", "{81E01CFE-2396-4CDE-BD8A-234B05E42639}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital.Patient", "Services\Patient\Hospital.Patient\Hospital.Patient.csproj", "{43BC3290-DE19-4286-99CB-A5857B59A6D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hospital.Patient", "Services\Patient\Hospital.Patient\Hospital.Patient.csproj", "{43BC3290-DE19-4286-99CB-A5857B59A6D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Employee", "Employee", "{E414AA39-2743-48D1-B6B2-65E823D1A180}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hospital.Employee", "Services\Employee\Hospital.Employee\Hospital.Employee.csproj", "{908AEBAD-8655-4AF6-95E7-80968AF344ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prescription", "Prescription", "{203AA104-0A0A-4341-9DD7-BBB841C659E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital.Prescription", "Services\Prescription\Hospital.Prescription\Hospital.Prescription.csproj", "{231EE906-90AD-4E32-9AF4-2AB61A5B6BEC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +27,14 @@ Global
 		{43BC3290-DE19-4286-99CB-A5857B59A6D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43BC3290-DE19-4286-99CB-A5857B59A6D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43BC3290-DE19-4286-99CB-A5857B59A6D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{908AEBAD-8655-4AF6-95E7-80968AF344ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{908AEBAD-8655-4AF6-95E7-80968AF344ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{908AEBAD-8655-4AF6-95E7-80968AF344ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{908AEBAD-8655-4AF6-95E7-80968AF344ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{231EE906-90AD-4E32-9AF4-2AB61A5B6BEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{231EE906-90AD-4E32-9AF4-2AB61A5B6BEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{231EE906-90AD-4E32-9AF4-2AB61A5B6BEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{231EE906-90AD-4E32-9AF4-2AB61A5B6BEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -26,6 +42,10 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{81E01CFE-2396-4CDE-BD8A-234B05E42639} = {07380EEE-A45B-445D-A661-357DFED73EC8}
 		{43BC3290-DE19-4286-99CB-A5857B59A6D2} = {81E01CFE-2396-4CDE-BD8A-234B05E42639}
+		{E414AA39-2743-48D1-B6B2-65E823D1A180} = {07380EEE-A45B-445D-A661-357DFED73EC8}
+		{908AEBAD-8655-4AF6-95E7-80968AF344ED} = {E414AA39-2743-48D1-B6B2-65E823D1A180}
+		{203AA104-0A0A-4341-9DD7-BBB841C659E9} = {07380EEE-A45B-445D-A661-357DFED73EC8}
+		{231EE906-90AD-4E32-9AF4-2AB61A5B6BEC} = {203AA104-0A0A-4341-9DD7-BBB841C659E9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EDB827DA-1EDE-44B0-A770-76543B0849C6}
